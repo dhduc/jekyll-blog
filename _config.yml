@@ -76,11 +76,20 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - algoliasearch-jekyll
 
 # Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - LICENSE
+#   - README.md
+#   - CNAME
+
+algolia:
+  application_id: 'FPWXQOBHHZ'
+  index_name: 'jekyll-local'
+  read_only_api_key: 'f480ab777fbafd9a9e5136eeae71d9bc'
+  excluded_files:
+    - 404.html
+    - index.html
